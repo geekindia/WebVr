@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+		<title>Interactive Kiosk</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link href="assets/css/client.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body id="client">
+		<section id="intro">
+			<div class="logo"></div>
+		</section>
+		<section id="register">
+			<div class="content">
+				<div id="fb-root"></div>
+				<div class="fbLogin">Connect with Facebook</div>
+			</div>
+		</section>
+		<section id="selectCar">
+			
+			<div id="buttons_cars" class="bwrap">
+				<button id="veyron">Bugatti Veyron</button>
+				<button id="gallardo">Lamborghini Gallardo</button>
+				<button id="f50">Ferrari F50</button>
+				<button id="camaro">Chevrolet Camaro</button>
+			</div>
+			
+			<div id="buttons_materials" class="bwrap">
+   				<div class="camaro">
+	   				<button id="m_camaro_0">Orange</button>
+	   				<button id="m_camaro_1">Blue</button>
+	   				<button id="m_camaro_2">Red</button>
+	   				<button id="m_camaro_3">Black</button>
+	   				<button id="m_camaro_4">White</button>
+	   				<button id="m_camaro_5">Orange metal</button>
+	   				<button id="m_camaro_6">Blue metal</button>
+	   				<button id="m_camaro_7">Red metal</button>
+	   				<button id="m_camaro_8">Green metal</button>
+	   				<button id="m_camaro_9">Black metal</button>
+	   				<button id="m_camaro_10">Gold</button>
+	   				<button id="m_camaro_11">Bronze</button>
+	   				<button id="m_camaro_12">Chrome</button>
+	   			</div>
+	   			<div class="veyron">
+	   				<button id="m_veyron_0">Orange metal</button>
+	   				<button id="m_veyron_1">Blue metal</button>
+	   				<button id="m_veyron_2">Red metal</button>
+	   				<button id="m_veyron_3">Green metal</button>
+	   				<button id="m_veyron_4">Black metal</button>
+	   				<button id="m_veyron_5">Gold</button>
+	   				<button id="m_veyron_6">Bronze</button>
+	   				<button id="m_veyron_7">Chrome</button>
+	   			</div>
+	   			<div class="gallardo">
+	   				<button id="m_gallardo_0">Orange</button>
+	   				<button id="m_gallardo_1">Blue</button>
+	   				<button id="m_gallardo_2">Red</button>
+	   				<button id="m_gallardo_3">Black</button>
+	   				<button id="m_gallardo_4">White</button>
+	   				<button id="m_gallardo_5">Orange metal</button>
+	   				<button id="m_gallardo_6">Blue metal</button>
+	   				<button id="m_gallardo_7">Green metal</button>
+	   				<button id="m_gallardo_8">Black metal</button>
+	   				<button id="m_gallardo_9">Carmine</button>
+	   				<button id="m_gallardo_10">Gold</button>
+	   				<button id="m_gallardo_11">Bronze</button>
+	   				<button id="m_gallardo_12">Chrome</button>
+	   			</div>
+	   			<div class="f50">
+	   				<button id="m_f50_0">Orange</button>
+	   				<button id="m_f50_1">Blue</button>
+	   				<button id="m_f50_2">Red</button>
+	   				<button id="m_f50_3">Black</button>
+	   				<button id="m_f50_4">White</button>
+	   				<button id="m_f50_5">Orange metal</button>
+	   				<button id="m_f50_6">Blue metal</button>
+	   				<button id="m_f50_7">Black metal</button>
+	   				<button id="m_f50_8">Carmine</button>
+	   				<button id="m_f50_9">Gold</button>
+	   				<button id="m_f50_10">Bronze</button>
+	   				<button id="m_f50_11">Chrome</button>
+	   			</div>
+			</div>
+			<h1>Select Car Model</h1>
+			<select id="carModel">
+		        <option value="veyron" selected="selected" >Bugatti Veyron</option>
+		        <option value="gallardo" >Lamborghini Gallardo</option>
+		        <option value="f50" >Ferrari F50</option>
+		        <option value="camaro" >Chevrolet Camaro</option>
+		    </select>
+		    <hr/>
+		    <h1>Select Car Color</h1>
+			<select id="f50DD">
+				<option value="m_f50_0" selected="selected" data-color="#ffff14" >Orange</option>
+				<option value="m_f50_1" data-color="#123b58" >Blue</option>
+				<option value="m_f50_2" data-color="#ff1413" >Red</option>
+				<option value="m_f50_3" data-color="#0c0d0c" >Black</option>
+				<option value="m_f50_4" data-color="#FFFFFF" >White</option>
+				<option value="m_f50_5" data-color="#eb5501" >Orange Metal</option>
+				<option value="m_f50_6" data-color="#032e55" >Blue Metal</option>
+				<option value="m_f50_7" data-color="#252012" >Black Metal</option>
+				<option value="m_f50_8" data-color="#7c1b0f" >Carmine</option>
+				<option value="m_f50_9" data-color="#84731f" >Gold</option>
+				<option value="m_f50_10" data-color="#ff9b17" >Bronze</option>
+				<option value="m_f50_11" data-color="#c9c9c9" >Chrome</option>
+		    </select>
+
+
+		    <select id="camaroDD">
+				<option value="m_camaro_0" selected="selected" data-color="#ffdf0f" >Orange</option>
+				<option value="m_camaro_1" data-color="#193f5c" >Blue</option>
+				<option value="m_camaro_2" data-color="#ff0d0f" >Red</option>
+				<option value="m_camaro_3" data-color="#0d0e0d" >Black</option>
+				<option value="m_camaro_4" data-color="#ffffb1" >White</option>
+				<option value="m_camaro_5" data-color="#ff6101" >Orange Metal</option>
+				<option value="m_camaro_6" data-color="#021a28" >Blue Metal</option>
+				<option value="m_camaro_7" data-color="#6d0101" >Red Metal</option>
+				<option value="m_camaro_8" data-color="#016c09" >Green Metal</option>
+				<option value="m_camaro_9" data-color="#302815" >Black Metal</option>
+				<option value="m_camaro_10" data-color="#ffff56" >Gold</option>
+				<option value="m_camaro_11" data-color="#ffb216" >Bronze</option>
+				<option value="m_camaro_12" data-color="#eff39b" >Chrome</option>
+		    </select>
+
+		    <select id="gallardoDD">
+				<option value="m_gallardo_0" selected="selected" data-color="#ff871d" >Orange</option>
+				<option value="m_gallardo_1" data-color="#1a476d" >Blue</option>
+				<option value="m_gallardo_2" data-color="#ed121b" >Red</option>
+				<option value="m_gallardo_3" data-color="#11161b" >Black</option>
+				<option value="m_gallardo_4" data-color="#ffffff" >White</option>
+				<option value="m_gallardo_5" data-color="#ff7d03" >Orange Metal</option>
+				<option value="m_gallardo_6" data-color="#021732" >Blue Metal</option>
+				<option value="m_gallardo_7" data-color="#019613" >Green Metal</option>
+				<option value="m_gallardo_8" data-color="#646141" >Black Metal</option>
+				<option value="m_gallardo_9" data-color="#ca493d" >Carmine</option>
+				<option value="m_gallardo_10" data-color="#c1d658" >Gold</option>
+				<option value="m_gallardo_11" data-color="#ff9f2a" >Bronze</option>
+				<option value="m_gallardo_12" data-color="#91cdc2" >Chrome</option>
+		    </select>
+
+		    <select id="veyronDD">
+				<option value="m_veyron_0" selected="selected" data-color="#ffcb04" >Orange Metal</option>
+				<option value="m_veyron_1" data-color="#032951" >Blue Metal</option>
+				<option value="m_veyron_2" data-color="#d40304" >Red Metal</option>
+				<option value="m_veyron_3" data-color="#02cd19" >Green Metal</option>
+				<option value="m_veyron_4" data-color="#464935" >Black Metal</option>
+				<option value="m_veyron_5" data-color="#ffff85" >Gold</option>
+				<option value="m_veyron_6" data-color="#ffb12d" >Bronze</option>
+				<option value="m_veyron_7" data-color="#e0ffff" >Chrome</option>
+		    </select>
+
+			<div class="gotoTestDrive">Take Test Drive</div>
+
+			<div class="renderWebVr">VR View</div>
+
+
+			<!--<div id="comments">
+				<h2>Your thoughts about the product</h2>
+				<div class="placeComment"><input type="text" placeholder="Comment"/><button id="submit"></button></div>
+				<div class="friendsComments">
+				<h2>Friends' comments for this car.</h2>
+					<ul></ul>
+				</div>
+			</div>-->
+		</section>
+		<section id="testDrive">
+			<div class="content">
+				<div class="speed"><span>10</span> miles/hrs</div>
+				<div class="accelerate"></div>
+				<div class="break"></div>
+			</div>
+		</section>
+		<section id="thankYou">
+			<div class="content">
+				<h1>Thank you for visiting Ferrary.</h1>
+				<p>Please visit again.</p>
+			</div>
+		</section>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="assets/js/globalData.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.ddslick.min.js"></script>
+	<script src="assets/js/underscore.js"></script>
+	<script src="assets/js/client.js"></script>
+</html>

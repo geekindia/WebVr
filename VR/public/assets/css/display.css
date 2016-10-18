@@ -1,0 +1,291 @@
+body,html{height:100%;padding:0px;margin:0px;font-family:"Arial",sans-serif;
+
+  background: #000;
+  overflow: hidden; 
+  color: #FFF;
+}
+body{
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.clear{clear:both}body{background-color:#000}
+/*# sourceMappingURL=labs.css.map */
+#qrCode{border: 5px solid white;
+padding: 10px;}
+section{
+  height: 100%;
+  width: 100%;
+  box-sizing:border-box;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  display: none;
+}
+#connect{
+  display: block;
+}
+#carSelection #d{
+  /*display: none;*/
+}
+div#d>div#buttons_cars {
+  display: none;
+}
+.userName{
+  position: absolute;
+  left: 45px;
+  top: 45px;
+}
+div.userName h3 {
+  margin: 0;
+}
+
+div.userName ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  width: 250px;
+}
+
+div.userName ul li {
+  display: block;
+  padding: 5px 8px;
+  border: solid 1px #424242;
+  background-color: #2c2c2c;
+}
+
+/*#buttons_materials.displayButton button {
+  background: #007dc1 linear-gradient(to bottom, #007dc1 5%, #0061a7 100%) repeat scroll 0 0;
+  border: 2px solid #2c2c2c;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 0px !important;
+  padding: 15px;
+  text-decoration: none;
+  margin: 5px;
+}*/
+
+#buttons_materials.displayButton button {
+  /*background: #007dc1;*/
+  border: 2px solid #2c2c2c;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 0px !important;
+  padding: 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+#buttons_materials.displayButton button.selected {
+  /*background: #007dc1;*/
+  border: 2px solid #ffffff;
+}
+
+/*Ferrari Body Color*/
+#buttons_materials.displayButton button#m_f50_0{
+  background: #ffff14;
+}
+#buttons_materials.displayButton button#m_f50_1{
+  background: #123b58;
+}
+#buttons_materials.displayButton button#m_f50_2{
+  background: #ff1413;
+}
+#buttons_materials.displayButton button#m_f50_3{
+  background: #0c0d0c;
+}
+#buttons_materials.displayButton button#m_f50_4{
+  background: #FFFFFF;
+}
+#buttons_materials.displayButton button#m_f50_5{
+  background: #eb5501;
+}
+#buttons_materials.displayButton button#m_f50_6{
+  background: #032e55;
+}
+#buttons_materials.displayButton button#m_f50_7{
+  background: #252012;
+}
+#buttons_materials.displayButton button#m_f50_8{
+  background: #7c1b0f;
+}
+#buttons_materials.displayButton button#m_f50_9{
+  background: #84731f;
+}
+#buttons_materials.displayButton button#m_f50_10{
+  background: #ff9b17;
+}
+#buttons_materials.displayButton button#m_f50_11{
+  background: #c9c9c9;
+}
+
+/*Camaro Body Color*/
+#buttons_materials.displayButton button#m_camaro_0{
+  background: #ffdf0f;
+}
+#buttons_materials.displayButton button#m_camaro_1{
+  background: #193f5c;
+}
+#buttons_materials.displayButton button#m_camaro_2{
+  background: #ff0d0f;
+}
+#buttons_materials.displayButton button#m_camaro_3{
+  background: #0d0e0d;
+}
+#buttons_materials.displayButton button#m_camaro_4{
+  background: #ffffb1;
+}
+#buttons_materials.displayButton button#m_camaro_5{
+  background: #ff6101;
+}
+#buttons_materials.displayButton button#m_camaro_6{
+  background: #021a28;
+}
+#buttons_materials.displayButton button#m_camaro_7{
+  background: #6d0101;
+}
+#buttons_materials.displayButton button#m_camaro_8{
+  background: #016c09;
+}
+#buttons_materials.displayButton button#m_camaro_9{
+  background: #302815;
+}
+#buttons_materials.displayButton button#m_camaro_10{
+  background: #ffff56;
+}
+#buttons_materials.displayButton button#m_camaro_11{
+  background: #ffb216;
+}
+#buttons_materials.displayButton button#m_camaro_12{
+  background: #eff39b;
+}
+
+/*Gallardo Body Color*/
+#buttons_materials.displayButton button#m_gallardo_0{
+  background: #ff871d;
+}
+#buttons_materials.displayButton button#m_gallardo_1{
+  background: #1a476d;
+}
+#buttons_materials.displayButton button#m_gallardo_2{
+  background: #ed121b;
+}
+#buttons_materials.displayButton button#m_gallardo_3{
+  background: #11161b;
+}
+#buttons_materials.displayButton button#m_gallardo_4{
+  background: #ffffff;
+}
+#buttons_materials.displayButton button#m_gallardo_5{
+  background: #ff7d03;
+}
+#buttons_materials.displayButton button#m_gallardo_6{
+  background: #021732;
+}
+#buttons_materials.displayButton button#m_gallardo_7{
+  background: #019613;
+}
+#buttons_materials.displayButton button#m_gallardo_8{
+  background: #646141;
+}
+#buttons_materials.displayButton button#m_gallardo_9{
+  background: #ca493d;
+}
+#buttons_materials.displayButton button#m_gallardo_10{
+  background: #c1d658;
+}
+#buttons_materials.displayButton button#m_gallardo_11{
+  background: #ff9f2a;
+}
+#buttons_materials.displayButton button#m_gallardo_12{
+  background: #91cdc2;
+}
+
+/*Veyron Body Color*/
+#buttons_materials.displayButton button#m_veyron_0{
+  background: #ffcb04;
+}
+#buttons_materials.displayButton button#m_veyron_1{
+  background: #032951;
+}
+#buttons_materials.displayButton button#m_veyron_2{
+  background: #d40304;
+}
+#buttons_materials.displayButton button#m_veyron_3{
+  background: #02cd19;
+}
+#buttons_materials.displayButton button#m_veyron_4{
+  background: #464935;
+}
+#buttons_materials.displayButton button#m_veyron_5{
+  background: #ffff85;
+}
+#buttons_materials.displayButton button#m_veyron_6{
+  background: #ffb12d;
+}
+#buttons_materials.displayButton button#m_veyron_7{
+  background: #e0ffff;
+}
+
+
+#carContent{
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+#thankyou{
+  display: none;
+}
+.logo{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -214px;
+  margin-top: -60px;
+  height: 129px;
+  width: 428px;
+  background: url("/assets/images/logo.png") center center no-repeat;
+  background-size: contain;
+  -webkit-transition: all 0.5s linear; /* For Safari 3.1 to 6.0 */
+    transition: all 0.5s linear;
+    animation: loader 5s linear 2s infinite alternate;
+}
+.testDrive #buttons_cars, .testDrive #buttons_materials{
+  display: none;
+}
+#timer{
+  z-index: 99000;
+  top: 50px;
+  left: 0px;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  height: 40px;
+  width: 100%;
+  color: #FFF;
+}
+#timer p{
+  display: inline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes loader {
+    0%   {-webkit-transform: rotateY(0deg);}
+    50%  {-webkit-transform: rotateY(180deg);}
+    100% {-webkit-transform: rotateY(0deg);}
+}
+
+/* Standard syntax */
+@keyframes loader {
+    0%   {transform: rotateY(0deg);}
+    50%  {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+}

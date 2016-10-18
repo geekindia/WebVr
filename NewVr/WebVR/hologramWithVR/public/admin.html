@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+		<title>Occult Virtual KiteFlying</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link href="assets/css/client.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body id="admin">
+		<a href="javascript:clientDetect()">CLIENT DETECT</a>
+		<br>
+		<br>
+		<a href="javascript:speakUp()">Speak</a>
+
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="assets/js/globalData.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/underscore.js"></script>
+	<script>
+		var _url = "http://"+IP,
+			socket = io.connect(_url);
+			function clientDetect(){
+				socket.emit("allowSensor",true);
+			}
+			function speakUp(){
+				socket.emit("speakUp",true);	
+			}
+	</script>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+		<title>Interactive Kiosk</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link href="assets/css/display.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body class="testDrive">
+	<div id="testDrive">
+		<div class="bwrap" id="buttons_cars">
+				<button id="veyron">Bugatti Veyron</button>
+				<button id="gallardo">Lamborghini Gallardo</button>
+				<button id="f50">Ferrari F50</button>
+				<button id="camaro">Chevrolet Camaro</button>
+			</div>
+
+			<div class="bwrap" id="buttons_materials"><div style="display: block;"><button id="m_veyron_0">Orange metal</button> <button id="m_veyron_1">Blue metal</button> <button id="m_veyron_2">Red metal</button> <button id="m_veyron_3">Green metal</button> <button id="m_veyron_4">Black metal</button> <button id="m_veyron_5">Gold</button> <button id="m_veyron_6">Bronze</button> <button id="m_veyron_7">Chrome</button> </div></div>
+
+		<div id="timer"><p></p> secs</div>
+		<div id="carCanvas"></div>
+		</div>
+		<div id="thankyou">
+			<h1>Thank you for visiting Ferrari.</h1>
+			<p>Please visit again.</p>
+		</div>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/annyang.js"></script>
+	<script src="assets/js/three.js"></script>
+	
+	<script src="assets/js/binaryLoader.js"></script>
+	<script src="assets/js/detector.js"></script>
+	<script src="assets/js/initCarLoadDrive.js"></script>
+	<script src="assets/js/globalData.js"></script>
+	<script src="assets/js/underscore.js"></script>
+	<script src="assets/js/testDrive.js"></script>
+</html>

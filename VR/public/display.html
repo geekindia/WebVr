@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+		<title>Interactive Kiosk</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link href="assets/css/display.css" rel="stylesheet" type="text/css" />
+	</head>
+	
+	<body class="display">
+		<section id="intro">
+			<div class="logo"></div>
+		</section>
+		<section id="connect">
+			<div class="content" style="text-align: center; width: 1024px; margin: 0px auto; position: relative; top: 20%;">
+				<h1>HI! WELCOME TO THE VIRTUAL DRIVE EXPERIENCE</h1>
+				<div class="qrCode"><img id='qrCode' src="#" alt="QR Code"/></div>
+				<p class="url"></p>
+			</div>
+		</section>
+		<section id="carSelection">
+			
+			<!-- <div class="right" id="carContent"></div> -->
+			<div class="car" style="height:70%;position:relative;">
+				<div class="userName"></div>
+				<div id="carCanvas">
+				</div>
+				
+			</div>
+			<div id="d" style="height: 30%;position:relative;text-align: center;margin-top: 30px;padding-top: 20px;background-color: #2c2c2c;">
+				<div id="info">
+					PLEASE SELECT THE COLOR OPTION FROM YOUR DEVICE SCREEN:
+					<!-- <a target="_blank" href="http://threejs.org">three.js</a> webgl demo :
+					texture by <a target="_blank" href="http://www.humus.name/index.php?page=Textures">Humus</a> : -->
+					<!-- <span id="car_info">
+						<span id="car_name">Bugatti Veyron model</span>
+						by <span id="car_author"><a target="_blank" href="http://artist-3d.com/free_3d_models/dnm/model_disp.php?uid=1129">Troyano</a></span>
+					</span> -->
+
+				</div>
+
+				<div class="bwrap" id="buttons_cars">
+					<button id="veyron">Bugatti Veyron</button>
+					<button id="gallardo">Lamborghini Gallardo</button>
+					<button id="f50">Ferrari F50</button>
+					<button id="camaro">Chevrolet Camaro</button>
+				</div>
+
+				<div class="bwrap displayButton" id="buttons_materials"><!-- <div style="display: block;"><button id="m_veyron_0">Orange metal</button> <button id="m_veyron_1">Blue metal</button> <button id="m_veyron_2">Red metal</button> <button id="m_veyron_3">Green metal</button> <button id="m_veyron_4">Black metal</button> <button id="m_veyron_5">Gold</button> <button id="m_veyron_6">Bronze</button> <button id="m_veyron_7">Chrome</button> </div> --></div>
+				<img src="/assets/images/hand_gestures2.png" style="width:60%; margin-top: -10px;">
+			</div>
+
+			
+			
+		</section>
+	</body>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="assets/js/firebase.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/annyang.js"></script>
+	<script src="assets/js/three.js"></script>
+
+	
+	<script src="assets/js/binaryLoader.js"></script>
+	<script src="assets/js/detector.js"></script>
+	<script src="assets/js/initCarLoad.js"></script>
+	<script src="assets/js/globalData.js"></script>
+	<script src="assets/js/underscore.js"></script>
+	<script src="assets/js/display.js"></script>
+</html>
